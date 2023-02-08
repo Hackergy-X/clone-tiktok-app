@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiktok[Rakwan]</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-vedio">
+      <div class="vedio">
+        <video src="video/v2.mp4" class="vedio-player"></video>
+        <div class="vedio-sidbar">
+          <div class="vedio-icon">
+            <a href="#"><img class="im" src="images/upload.png" alt=""></a>
+          </div>
+          <div class="vedio-icon">
+            <img src="images/favorite.png" alt="">
+            <p>12</p>
+          </div>
+          <div class="vedio-icon">
+            <img src="images/comment.png" alt="">
+            <p>12</p>
+          </div>
+          <div class="vedio-icon">
+            <img src="images/share.png" alt="">
+            <p>12</p>
+          </div>
+        </div>
+        <!-- Footer-Start -->
+        <div class="footer">
+          <div class="footer-text">
+             <h3>Rakwan Ali</h3>
+             <p class="description">Best Song This Year</p>
+             <div class="img-marq">
+                <img src="images/music.png">
+                <marquee >Song player now</marquee>
+             </div>
+          </div>
+          <img class="image-play" src="images/play.png" >
+        </div>
+        <!-- Footer End -->
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      <div class="vedio">
+        <video src="video/v1.mp4" class="vedio-player"></video>
+
+        <div class="vedio-sidbar">
+          <div class="vedio-icon">
+            <img src="images/favorite.png" alt="">
+            <p>12</p>
+          </div>
+          <div class="vedio-icon">
+            <img src="images/comment.png" alt="">
+            <p>12</p>
+          </div>
+          <div class="vedio-icon">
+            <img src="images/share.png" alt="">
+            <p>12</p>
+          </div>
+        </div>
+        <!-- Footer-Start -->
+        <div class="footer">
+          <div class="footer-text">
+             <h3>Rakwan Ali</h3>
+             <p class="description">Best Song This Year</p>
+             <div class="img-marq">
+                <img src="images/music.png">
+                <marquee >Song player now</marquee>
+             </div>
+          </div>
+          <img class="image-play" src="images/play.png" >
+        </div>
+        <!-- Footer End -->
+      </div>
+      <div class="vedio">
+        <video src="video/v3.mp4" class="vedio-player"></video>
+
+        <div class="vedio-sidbar">
+          <div class="vedio-icon">
+            <img src="images/favorite.png" alt="">
+            <p>12</p>
+          </div>
+          <div class="vedio-icon">
+            <img src="images/comment.png" alt="">
+            <p>12</p>
+          </div>
+          <div class="vedio-icon">
+            <img src="images/share.png" alt="">
+            <p>12</p>
+          </div>
+        </div>
+        <!-- Footer-Start -->
+        <div class="footer">
+          <div class="footer-text">
+             <h3>Rakwan Ali</h3>
+             <p class="description">Best Song This Year</p>
+             <div class="img-marq">
+                <img src="images/music.png">
+                <marquee >Song player now</marquee>
+             </div>
+          </div>
+          <img class="image-play" src="images/play.png" >
+        </div>
+        <!-- Footer End -->
+      </div>
+
+
+    </div>
+
+
+    <script>
+      const vedios = document.querySelectorAll('video');
+      for(const video of vedios){
+        video.addEventListener('click',function(){
+          if(video.paused){
+            video.play();
+          }else{
+            video.pause();
+          }
+        })
+      }
+    </script>
+</body>
+</html>
